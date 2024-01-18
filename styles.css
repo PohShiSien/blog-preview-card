@@ -1,0 +1,148 @@
+:root {
+    --clr-primary-300 : hsl(47, 88%, 63%);
+
+    --clr-neutral-200 : hsl(0, 0%, 100%);
+    --clr-neutral-400 : hsl(0, 0%, 50%);
+    --clr-neutral-900 : hsl(0, 0%, 7%);
+
+    --ff-regular: 'Figtree', serif;
+
+    --fw-regular: 600;
+    --fw-bold: 800;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  .attribution {
+     font-size: 11px;
+    text-align: center;
+    }
+
+  .attribution a {
+     color: hsl(228, 45%, 44%);
+    }
+
+body {
+    background-color: var(--clr-primary-300);
+    font-size: 16px;
+    font-family: var(--ff-regular), sans-serif;
+    margin: 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.product {
+    background: var(--clr-neutral-200);
+    width: 350px;
+    height: 530px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid var(--clr-neutral-900);
+    box-shadow: 7px 7px;
+}
+
+.product__image {
+    border-radius: 10px;
+    width: 315px;
+}
+
+.product__content {
+    padding: 20px;
+}
+
+.product__category {
+    display: inline-block;
+    background-color: var(--clr-primary-300);
+    font-weight: var(--fw-bold);
+    padding: 2px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product__date {
+    display: block;
+    margin-bottom: 17px;
+}
+
+.product__title {
+    margin-bottom: 17px;
+}
+
+.product__description {
+    font-weight: var(--fw-regular);
+    opacity: 0.5;
+    margin-bottom: 17px;
+}
+
+.flex-group {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture {
+    height: 35px;
+    margin-right: 10px;
+}
+
+.name {
+    font-weight: var(--fw-bold);
+}
+
+
+
+
+
+
+
